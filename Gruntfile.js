@@ -29,7 +29,7 @@ module.exports = (grunt) => {
                     },
                     {
                         expand: true,
-                        src: ["fonts/**", "opensearch.xml"],
+                        src: ["fonts/**"],
                         dest: "dist/website",
                     },
                     {
@@ -43,10 +43,6 @@ module.exports = (grunt) => {
                             "css/google-roboto-mono.css",
                         ],
                         dest: "dist/website/css/",
-                    },
-                    {
-                        src: ["sitemap.xml"],
-                        dest: "dist/website/",
                     },
                 ],
             },
@@ -127,8 +123,6 @@ module.exports = (grunt) => {
                 },
                 files: {
                     "dist/website/index.html": "views/website/index.pug",
-                    "dist/website/introduction/index.html": "views/website/introduction.pug",
-                    "dist/website/libraries/index.html": "views/website/libraries.pug",
                 },
             },
             extension: {

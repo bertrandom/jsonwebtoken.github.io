@@ -931,8 +931,6 @@ describe('Editor', function() {
 
             await this.page.waitFor(tokenEditorThrottleWait);
 
-            const shareJwtButton = await this.page.$('.website-share button');
-            await shareJwtButton.click();
 
             const srcToken = await this.page.evaluate(() =>
                 window.test.tokenEditor.getValue());
@@ -995,8 +993,6 @@ describe('Editor', function() {
 
                 await this.page.waitFor(tokenEditorThrottleWait);
 
-                const shareJwtButton = await this.page.$('.website-share button');
-                await shareJwtButton.click();
 
                 const srcToken = await this.page.evaluate(() =>
                     window.test.tokenEditor.getValue());

@@ -97,22 +97,12 @@ First, install the required dependencies:
 npm install
 ```
 
-In order to build (and run) the project execute:
-
-```sh
-./node_modules/.bin/grunt
+```
+npm run build
 ```
 
-You will find the generated files in the `dist` directory. For the website, you can run a server at its root. For example: `http-server dist/website`. The default `grunt` task runs a server
-at [https://127.0.0.1:8000](https://127.0.0.1:8000) and watches
-for changes.
-
-To run tests, execute:
-
 ```
-./node_modules/.bin/grunt test
+serve dist/website
 ```
-
-Look at the end of the [Gruntfile](/Gruntfile.js) for other common tasks.
 
 ### Happy hacking!
